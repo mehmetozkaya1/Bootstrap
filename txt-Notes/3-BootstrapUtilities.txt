@@ -1,0 +1,103 @@
+--- Background ---
+Background features
+
+*** Color:
+bg-<color> = background color
++
+bg.transparent
+
+- Gradient:
+Renk geçişi
+Ex:
+.bg-primary.bg-gradient
+
+- Opacity
+
+--- Borders ---
+Class ismi olarak verilir.
+border, border-top, border-end
+border-bottom, border-start
+
+- Border Color:
+border-<color>: border color
+
+- Border Width:
+border-<number>: border width (1-2-3-4-5)
+
+- Border Radius:
+Class ismi olarak verilir.
+rounded, rounded-top, rounded-circle ...
+
+--- Flex ---
+class ismi olarak verilir.
+
+d-flex: Tüm satırı kaplar.
+d-inline-flex: Satırın kullanılan kadarını kaplar.
+d-flex flex-row-reverse: Tersten (sağdan sola)
+d-flex flex-column : Kolon haline getirir.
+
+d-flex justify-content-start: Başa sıkıştırır.
+d-flex justify-content-end: Sona sıkıştırır.
+d-flex justify-content-center: Ortaya sıkıştırır.
+d-flex justify-content-between: Sağ sola ve ortaya koyar.
+d-flex justify-content-around: Her itemin kenarlarına eşit boşluk verir.
+d-f
+--- Position ---
+Ex:
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div> (Sol en üst)
+  <div class="position-absolute top-0 end-0"></div> (Sağ en üst)
+  <div class="position-absolute top-50 start-50"></div> (Sayfa ortası)
+  <div class="position-absolute bottom-50 end-50"></div> (Sayfa Ortası)
+  <div class="position-absolute bottom-0 start-0"></div> (Sol en alt)
+  <div class="position-absolute bottom-0 end-0"></div> (Sağ en alt)
+</div>
+
+--- Shadows ---
+Class ismi olarak verilir.
+shadow-none : Gölge yok.
+shadow-sm : Az gölge
+shadow : Gölge
+shadow-lg : Çok gölge
+
+
+--- Sizing ---
+w-<number(0-100)>: Genişlik yüzdesi
+h-<number(0-100)>: Yükseklik yüzdesi
+
+--- Spacing ---
+m = margin
+p = padding
+
+t = top
+b = bottom
+s = start (left)
+e = end (right)
+x = both right and left
+y = both top and bottom
+
+(m/p)-(t/b/s/e/x/y)-<number(0-5)>
+
+- Texts:
+text-start: Baştan
+text-center: Ortadan
+text-end: Sonda
+
+text-lowercase: Küçük harf
+text-uppercase: Büyük harf
+text-capitalize: İlk harfler büyük
+
+fw-bold : Bold text
+fw-bolder : Daha kalın
+fw-semibold: orta kalın
+fw-normal : Normal
+fw-light : İnce
+fw-lighter : Daha ince
+fst-italic : İtalik
+fst-normal : Normal text
+
+--- Visibility ---
+class ismi olarak verilir.
+
+visible : Görünür
+invisible : invisible

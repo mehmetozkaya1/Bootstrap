@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toasts</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-danger" type="button" id="errorButton">Hata Göster</button>
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="myToast" class="toast text-bg-danger" role="alert">
+                        <div class="toast-header justify-content-between">
+                            <strong>Hata Mesajı</strong>
+                            <small>7 dk önceki</small>
+                            <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body">
+                            Bu bir hata mesajıdır!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('errorButton')
+        const toastLiveExample = document.getElementById('myToast')
+        if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+
+            toast.show()
+        })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <a href="#content" class="btn btn-success" data-bs-toggle="collapse">Link</a>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content">Buton</button>
+                </div>
+                <div class="collapse mt-2" id="content">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum.
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <a href="#content1" class="btn btn-success" data-bs-toggle="collapse">Link</a>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content1">Buton</button>
+                </div>
+                <div style="max-height: 120px;">
+                    <div class="collapse collapse-horizontal mt-2" id="content1">
+                        <div class="card card-body" style="width: 300px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div class="me-3">
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#icerik1">Birinci</button>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#icerik2">İkinci</button>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".icerik">İkisi</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="collapse mt-2 icerik" id="icerik1">
+                        <div class="card card-body">
+                            1-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, laudantium.
+                        </div>
+                    </div>
+                    <div class="collapse mt-2 icerik" id="icerik2">
+                        <div class="card card-body">
+                            2-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, laudantium.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

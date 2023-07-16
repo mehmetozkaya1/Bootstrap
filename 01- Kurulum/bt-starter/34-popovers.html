@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popovers</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .custom-popover {
+            --bs-popover-max-width: 200px;
+            --bs-popover-border-color: var(--bs-primary);
+            --bs-popover-header-bg: var(--bs-success);
+            --bs-popover-header-color: var(--bs-white);
+            --bs-popover-body-padding-x: 1rem;
+            --bs-popover-body-padding-y: .5rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover Title" data-bs-content="Popover explanation"
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-popover">
+                    Click to toggle popover
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+    <script>
+        const popover = new bootstrap.Popover('.example-popover', {
+            container: '.modal-body'
+        })
+    </script>
+</body>
+</html>

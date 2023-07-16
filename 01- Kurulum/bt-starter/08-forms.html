@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <form>
+            <div class="mb-3">
+                <label class="form-label" for="user-name">
+                    Kullanıcı Adı:
+                </label>
+                <input placeholder="Lütfen Kullanıcı Adınızı Giriniz..." class="form-control" type="text" name="user-name" id="user-name">
+            </div>
+        </form>
+    </div>
+    <div class="container mt-4">
+        <form>
+            <div class="mb-3">
+                <label class="form-label" for="email">
+                    Email:
+                </label>
+                <input placeholder="Lütfen emailinizi girin..." class="form-control-sm form-control" type="email" name="email" id="email">
+            </div>
+        </form>
+    </div>
+    <div class="container mt-4">
+        <form>
+            <div class="mb-3">
+                <label class="form-label" for="name">
+                    Adı Soyadı:
+                </label>
+                <input placeholder="Lütfen isim ve soyisminizi girin..." disabled class="form-control-lg form-control" type="text" name="name" id="name">
+            </div>
+        </form>
+    </div>
+    <div class="container mb-4">
+        <label for="formFile" class="form-label">
+            Dosya
+        </label>
+        <input class="form-control" type="file" id="formFile">
+    </div>
+    <div class="container mb-3">
+        <label for="color" class="form-label">
+            Renk Seçici
+        </label>
+        <input class="form-control form-control-color" type="color" id="color">
+    </div>
+    
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

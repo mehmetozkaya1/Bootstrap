@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordions</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="accordion" id="sorular">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#cevap1">Soru 1
+                            </button>
+                        </h2>
+                        <div id="cevap1" class="collapse accordion-collapse" data-bs-parent="#sorular">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis consequuntur reiciendis odit aliquid doloremque explicabo vitae non necessitatibus at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#cevap2">Soru 2
+                            </button>
+                        </h2>
+                        <div id="cevap2" class="collapse accordion-collapse" data-bs-parent="#sorular">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis consequuntur reiciendis odit aliquid doloremque explicabo vitae non necessitatibus at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#cevap3">Soru 3
+                            </button>
+                        </h2>
+                        <div id="cevap3" class="collapse accordion-collapse" data-bs-parent="#sorular">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis consequuntur reiciendis odit aliquid doloremque explicabo vitae non necessitatibus at.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

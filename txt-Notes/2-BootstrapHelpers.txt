@@ -1,0 +1,51 @@
+--- Colors ---
+primary = blue
+secondary = grey
+success = green
+danger = red
+warning = yellow
+info = light blue
+light = white
+dark = black
+
+--- Components ---
+text-bg-<color> = text background color
+
+--- Colored Links ---
+link-<color> = The color of the link
+
+--- Position ---
+fixed-top = always stays on the top
+fixed-bottom = always stays on the bottom
+sticky-top = stays on the top until you scroll
+sticky-bottom = stays on the bottom until you scroll
+
+--- Ratio ---
+Ratio = height and width ratio
+
+raitos = 1x1 4x3 16x9 21x9
+
+Ex:
+<div class="ratio ratio-16x9">
+	<iframe src="...">
+</div>
+
+--- Streched Link ---
+Asıl istenilen nesnenin çevresine de tıklandığında etkileşime girilmesini sağlar.
+Bir üstündeki position-relative özelliğine kadar link özelliğini yayar.
+Class ismi olarak verilir.(stretched-link)
+
+--- Text truncation ---
+Uzun içerikleri kesmek için kullanılır.
+Class ismi olarak verilir.
+
+Ex:
+<div class="col-2 text-truncate"></div> (col-2 genişliğinde gösterir.)
+
+--- Visually Hidden ---
+Makes an object invisible.
+Class ismi olarak verilir. (visually-hidden)
+
+--- Vertical Rule ---
+Yatayda koyulabilen </hr> çizgisini dikey hale getirir.
+Class ismi olarak verilir. (vr)

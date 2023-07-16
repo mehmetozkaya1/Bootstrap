@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <form>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check1">
+                        <label for="check1" class="form-check-label">Check1</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="radio" class="form-check-input" name="radio-test" id="radio1">
+                        <label for="radio1" class="form-check-label">Radio1</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="radio" class="form-check-input" name="radio-test" id="radio2">
+                        <label for="radio2" class="form-check-label">Radio2</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check">Single Toggle</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option1">Checked</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">Radio</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="option3">Disabled</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">Radio</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

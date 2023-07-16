@@ -1,0 +1,74 @@
+Boyutlar
+
+small = sm (576 px)
+medium = md (768 px)
+large = lg (992 px)
+extra large = xl (1200 px)
+extra extra large = xxl (1400 px)
+
+Konteynırlar:
+
+Konteynırlar ile ekran boyutunu responsive hale getirebiliriz.
+Div etiketine class değerini container vererek sağlayabiliriz.
+
+.container 
+.container-sm
+.container-md
+.container-lg
+.container-xl
+.container-xxl
+.container-fluid = Tüm ekran boyutlarında %100 doluluk
+
+Layout Grid:
+
+Bir grid oluşturabilmek için col değerini verebiliriz.
+Maks değeri 12'dir.
+Arkasına verilen sayı değeri kolonun o satırda kapladığı alanı belirler.
+
+.col-
+.col-sm-
+.col-md-
+.col-lg-
+.col-xl
+.col-xxl-
+
+Yapı : 
+container div i içerisine bir row div i ve onun da içerisine col divleri
+
+*** bg-<renk adı> ile arkaplan rengi verilebilir.
+
+Örnek: 
+
+Büyük ekranda yan yana küçük ekranda alt alta olan divler:
+
+col-12 col-md-4 dersek eğer mobilde tamamını kaplayan fakat büyük ekranda
+4 birimlik yer kaplayan bir yapı oluştururuz.
+
+Gutters:
+
+İtemler arasındaki iç boşluklarıdır. Kolon içerikleri arasındaki
+sağ ve sol paddinglerdir. gx- gy- ya da her ikisi için g- ile boşluk verebiliriz.
+5 e kadar değer alabiliyor.
+
+Rowların flex özellikleri vardır. Yani içerikleri belirli aralıklarla yerleştirirler.
+Bunu ayarlamak için:
+align-items-center : Tüm nesneleri dikey olarak ortalar.
+align-items-start : Başlangıçtan sıralar.
+align-items-end : Sondan sıralar.
+justify-content-center : Tüm nesneleri yatay olarak ortalar.
+justify-content-between : Ortayı boş bırakır iki yana yaslar.
+justify-content-around : Nesnelerin sağına ve soluna eşit boşluk bırakır.
+justify-content-evenly : Nesneleri her tarafta eşit boşluk bırakacak şekilde yerleştirir.
+text-center : (colonda kullanılır.) Tüm textleri ortalar.
+
+
+Order:
+
+Sıralamak için order'ı kullanırız. col ile kullanılabilir ya da herhangi bir içerikle(?)
+
+order-first : İlk sırada olacak eleman
+order-last : Son sırada olacak eleman
+
+ya da sayılar vererek de sıralayabiliriz.
+Responsive sıralamalar için yine sıralama boyutlarını kullanabiliriz.
+order-md-2 Mesela büyük ekranlar için içeriğin 2. sırada olmasını sağladık

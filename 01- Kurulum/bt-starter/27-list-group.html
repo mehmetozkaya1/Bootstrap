@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Groups</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Liste Elemanı 1
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 2
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 3
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 4
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 5
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        Liste Elemanı 1
+                    </li>
+                    <li class="list-group-item disabled">
+                        Liste Elemanı 2
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 3
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 4
+                    </li>
+                    <li class="list-group-item">
+                        Liste Elemanı 5
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 1</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 2</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 3</a>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="col-4">
+                <div class="list-group-flush">
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 1</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 2</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 3</a>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="col-4">
+                <div class="list-group list-group-numbered">
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 1</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 2</a>
+                    <a class="list-group-item list-group-item-action" href="#">Liste Elemanı 3</a>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+            </ol>
+            <hr class="mt-3">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <hr class="mt-3">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">An item</li>
+                <li class="list-group-item list-group-item-success">A second item</li>
+                <li class="list-group-item list-group-item-success">A third item</li>
+            </ul>
+            <hr class="mt-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                  <label class="form-check-label stretched-link" for="firstCheckbox">First checkbox</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                  <label class="form-check-label stretched-link" for="secondCheckbox">Second checkbox</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                  <label class="form-check-label stretched-link" for="thirdCheckbox">Third checkbox</label>
+                </li>
+            </ul>
+            <hr class="mt-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" name="radio-list" id="firstradio">
+                  <label class="form-check-label stretched-link" for="firstradio">First radio</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" name="radio-list" value="" id="secondradio">
+                  <label class="form-check-label stretched-link" for="secondradio">Second radio</label>
+                </li>
+                <li class="list-group-item">
+                  <input name="radio-list" class="form-check-input me-1" type="radio" value="" id="thirdradio">
+                  <label class="form-check-label stretched-link" for="thirdradio">Third radio</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

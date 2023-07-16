@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toasts</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .custom-tooltip {
+            --bs-tooltip-bg: var(--bs-danger);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-success"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Burası açıklama bölümü">
+                Göster
+                </button>
+                <hr>
+                <button type="button" class="btn btn-secondary"
+                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Burası açıklama bölümü">
+                Göster
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

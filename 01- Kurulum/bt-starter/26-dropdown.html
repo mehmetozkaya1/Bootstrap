@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action1</a></li>
+                        <li><a class="dropdown-item" href="#">Action2</a></li>
+                        <li><a class="dropdown-item" href="#">Action3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown mt-5">
+                    <button type="button" data-bs-toggle="dropdown" class="btn btn-danger dropdown-toggle">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action1</a></li>
+                        <li><a class="dropdown-item" href="#">Action2</a></li>
+                        <li><a class="dropdown-item" href="#">Action3</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group mt-5">
+                    <button type="button" class="btn btn-danger">Action</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown mt-5">
+                    <button type="button" data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action1</a></li>
+                        <li><a class="dropdown-item" href="#">Action2</a></li>
+                        <li><a class="dropdown-item" href="#">Action3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-center mt-5">
+                    <button type="button" data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action1</a></li>
+                        <li><a class="dropdown-item" href="#">Action2</a></li>
+                        <li><a class="dropdown-item" href="#">Action3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropup mt-5">
+                    <button type="button" data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action1</a></li>
+                        <li><a class="dropdown-item" href="#">Action2</a></li>
+                        <li><a class="dropdown-item" href="#">Action3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group dropend">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropend
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" class="dropdown-item">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item">Deneme</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropstart
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" class="dropdown-item">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item active ">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item disabled">Deneme</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown dropdown-dark">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropstart
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a href="#" class="dropdown-item">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item active ">Deneme</a></li>
+                          <li><a href="#" class="dropdown-item disabled">Deneme</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown dropdown-dark">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropstart
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Dropdown header</h6>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Deneme</a></li>
+                            <li><a href="#" class="dropdown-item active ">Deneme</a></li>
+                            <li><a href="#" class="dropdown-item disabled">Deneme</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Register
+                            </button>
+                            <div class="dropdown-menu">
+                                <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

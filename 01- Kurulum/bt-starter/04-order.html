@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container-md bg-secondary">
+        <div class="row bg-dark" style="height: 200px;">
+            <div class="col-4 bg-warning text-center order-last">İçerik 1</div>
+            <div class="col-4 bg-danger text-center">İçerik 2</div>
+            <div class="col-4 bg-success text-center order-first">İçerik 3</div>
+        </div>
+        <div class="row bg-dark" style="height: 200px;">
+            <div class="col-4 bg-warning text-center order-3">İçerik 1</div>
+            <div class="col-4 bg-danger text-center order-1">İçerik 2</div>
+            <div class="col-4 bg-success text-center order-2">İçerik 3</div>
+        </div>
+        <div class="row bg-dark" style="height: 200px;">
+            <div class="col-12 col-md-4 bg-warning text-center order-last order-md-1">İçerik 1</div>
+            <div class="col-12 col-md-4 bg-danger text-center order-md-2">İçerik 2</div>
+            <div class="col-12 col-md-4 bg-success text-center order-first order-md-3">İçerik 3</div>
+        </div>
+    </div>
+
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
